@@ -14,6 +14,9 @@ import { SearchComponent } from './body/search.component';
 import { MoviesComponent } from './body/movies.component';
 import { SportsComponent } from './body/sports.component';
 import { AppRoutingModule } from './app-routing.module';
+import { TvComponent } from './body/tv.component';
+import { MystuffComponent } from './body/mystuff.component';
+import { HubsComponent } from './body/hubs.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { AppRoutingModule } from './app-routing.module';
     HomeComponent,
     SearchComponent,
     MoviesComponent,
-    SportsComponent
+    SportsComponent,
+    TvComponent,
+    MystuffComponent,
+    HubsComponent
   ],
   imports: [
     BrowserModule,
