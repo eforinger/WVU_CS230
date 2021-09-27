@@ -4,9 +4,10 @@ import { HomeComponent } from './body/home.component';
 import { MoviesComponent } from './body/movies.component';
 import { SearchComponent } from './body/search.component';
 import { SportsComponent } from './body/sports.component';
+import { LayoutMainComponent } from './layout/layout-main.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: 'home', component: LayoutMainComponent },
   { path: 'movies', component: MoviesComponent },
   { path: 'search', component: SearchComponent },
   { path: 'sports', component: SportsComponent },
