@@ -17,6 +17,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { TvComponent } from './body/tv.component';
 import { MystuffComponent } from './body/mystuff.component';
 import { HubsComponent } from './body/hubs.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UserInfoComponent } from './header/user-info.component';
 
 @NgModule({
   declarations: [
@@ -34,11 +36,13 @@ import { HubsComponent } from './body/hubs.component';
     SportsComponent,
     TvComponent,
     MystuffComponent,
-    HubsComponent
+    HubsComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
