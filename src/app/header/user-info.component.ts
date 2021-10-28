@@ -14,10 +14,11 @@ export class UserInfoComponent implements OnInit {
     ngOnInit(): void {
        console.log("registering showUserInfo as a subscriber")
        this.showUserInfo();
+
     }
 
     showUserInfo(){
-        this.userInfoService.getUserInfo().subscribe((data: UserInfo) => {
+        this.userInfoService.getUserInfo().subscribe((data) => {
             console.log(data);
             this.myInfo = data;
         })

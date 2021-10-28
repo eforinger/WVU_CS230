@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { BodyComponent } from './body/body.component';
 import { CardComponent } from './card/card.component';
@@ -19,6 +18,8 @@ import { MystuffComponent } from './body/mystuff.component';
 import { HubsComponent } from './body/hubs.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './header/user-info.component';
+import { EditUserInfoComponent } from './header/edit-user-component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -37,12 +38,14 @@ import { UserInfoComponent } from './header/user-info.component';
     TvComponent,
     MystuffComponent,
     HubsComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    EditUserInfoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

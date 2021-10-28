@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <form #postForm="ngForm" (ngSubmit)="onUpdateUserInfo(postForm.value)">
+                <div class="input-group">
+                    <span class="input-group-text">First and last name</span>
+                    <input type="text" class="form-control" ngModel name="FirstName">
+                    <input type="text" class="form-control" ngModel name="LastName">
+                  </div>
+
+                  <div class="input-group">
+                    <span class="input-group-text">Email and password</span>
+                    <input type="text" class="form-control" ngModel name="Email">
+                    <input type="text" class="form-control" ngModel name="Password">
+                  </div>
+
+                  <div class="input-group">
+                    <span class="input-group-text">Birthdate and gender</span>
+                    <input type="text" class="form-control" ngModel name="Birthdate">
+                    <input type="text" class="form-control" ngModel name="Gender">
+                  </div>
+
+                  <button class="btn btn-dark" type="submit">
+                    Create Account
+                  </button> 
+            </form>
+        </div>
+    </div>
+</div>
