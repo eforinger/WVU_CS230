@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "hulu-app-67b3e": {
+      "hosting": {
+        "hulu": [
+          "hulu-app-67b3e"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "hulu-app-67b3e"
+  }
+}
